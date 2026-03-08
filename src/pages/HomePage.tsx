@@ -47,17 +47,25 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold text-serwa-secondary mb-6"
+              className="font-serif text-3xl md:text-5xl lg:text-6xl font-semibold text-serwa-secondary mb-6 leading-tight"
             >
-              Welcome to SERWA Professional
+              This is not a game changer. The game is changed.
             </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="text-base md:text-lg text-serwa-secondary/90 max-w-2xl mx-auto md:mx-0 mb-4"
+            >
+              The future of hair care is integrated, intelligent, and intentional.
+            </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-serwa-secondary/80 max-w-2xl mx-auto md:mx-0 italic"
             >
-              India's leading brand in effective luxury haircare
+              One brand. One belief. One complete solution. Beauty begins at the molecule.
             </motion.p>
           </div>
 
@@ -122,8 +130,8 @@ export default function HomePage() {
                 transition={{ delay: 0.2 }}
                 className="text-serwa-secondary/80 text-lg max-w-xl mb-8"
               >
-                Content placeholder — add company story and brand message here. India&apos;s leading
-                brand in effective luxury haircare. Our formulations restore, repair, and rejuvenate.
+                Serwa Professional began with a question: why does beauty ask us to choose between science and soul? 
+                We refused that choice. Built in the space between formulation and feeling — where precision meets intuition.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -184,8 +192,8 @@ export default function HomePage() {
                 transition={{ delay: 0.2 }}
                 className="text-serwa-secondary/80 text-lg mb-8"
               >
-                Content placeholder — add shampoo product copy here. Gentle yet effective for
-                professional results.
+                No rinse required. All nutrients stay locked inside your hair for deeper repair, 
+                enhanced smoothness, and extended shine. Formaldehyde-free, designed for professional salon use.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -215,8 +223,8 @@ export default function HomePage() {
               SERWA Professional Range
             </h2>
             <p className="text-serwa-secondary/80 max-w-2xl mx-auto">
-              Content placeholder - add range description from client. 
-              Our products deeply restore, repair, and rejuvenate hair back to its glory.
+              Introducing Molecular 360 — a tri-therapy treatment where science meets sensorial artistry. 
+              One cream, three ampoules. Smoothness, repair, strength, and hydration achieved in one system.
             </p>
           </motion.div>
 
@@ -270,9 +278,8 @@ export default function HomePage() {
                 Chemically-treated or damaged hair
               </h2>
               <p className="text-serwa-secondary/80 mb-6">
-                Content placeholder - our specialists recommend consistent use of SERWA Professional 
-                Shampoo with Hair Mask. Achieve a stylish appearance with our treatments for 
-                immediate shine and silkiness.
+                Treatments smooth. Botox fills. Collagen coats. Molecular 360 works at the molecular level 
+                where strength, elasticity, repair, and longevity actually begin. One philosophy. One system. One solution.
               </p>
               <Link to="/shop/conditioner" className="btn-primary inline-block">
                 Explore Treatment Range
@@ -299,8 +306,9 @@ export default function HomePage() {
                 Scalp problems?
               </h2>
               <p className="text-serwa-primary/80 mb-6">
-                Content placeholder - defend against scalp issues with SERWA Professional 
-                solutions. Content to be added from client.
+                Different brands mean mixing intentions. With Molecular 360, stylists don&apos;t have to compromise, 
+                consumers don&apos;t have to chase solutions, and hair doesn&apos;t have to recover from over-treatment. 
+                Everything works in alignment, not overlap.
               </p>
               <Link to="/shop/shampoo" className="btn-primary inline-block bg-serwa-accent hover:bg-pink-600">
                 Explore More
@@ -341,8 +349,8 @@ export default function HomePage() {
                 Hues & tones
               </h2>
               <p className="text-serwa-secondary/80 mb-6">
-                Content placeholder - restore radiant tones with SERWA Professional. 
-                Content to be added from client.
+                Hair isn&apos;t a problem to fix — it&apos;s a canvas to empower. Serwa exists to end the compromise 
+                between health and transformation. Created by professionals who believed hair deserved more than correction.
               </p>
               <Link to="/shop" className="btn-outline inline-block">
                 Buy Now
