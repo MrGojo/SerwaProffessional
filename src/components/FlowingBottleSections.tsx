@@ -94,8 +94,9 @@ const FlowingBottleSections = forwardRef<HTMLDivElement, FlowingBottleSectionsPr
                 SERWA Professional
               </h2>
               <p className="text-serwa-secondary/80 text-lg max-w-xl mb-8">
-                Content placeholder — add company story and brand message here. India&apos;s leading
-                brand in effective luxury haircare. Our formulations restore, repair, and rejuvenate.
+                In Sanskrit, <strong className="text-serwa-secondary">Serwa</strong> means complete — whole,
+                entire, nothing missing. We were born inside salons, from a single question:
+                why does hair get temporary beauty… but never completeness?
               </p>
               <Link to="/our-story" className="btn-outline inline-block">
                 Our Story
@@ -124,11 +125,13 @@ const FlowingBottleSections = forwardRef<HTMLDivElement, FlowingBottleSectionsPr
                 Professional Shampoo
               </p>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-serwa-secondary mb-6">
-                Clean. Nourish. Protect.
+                Molecular 360. Complete control.
               </h2>
               <p className="text-serwa-secondary/80 text-lg max-w-xl mb-8">
-                Content placeholder — add shampoo product copy here. Gentle yet effective for
-                professional results.
+                One intelligent foundation, not ten different systems. At the heart of Molecular 360 lies the
+                <strong className="text-serwa-secondary"> Reconstruction Cream</strong> — the engine.
+                Mixed in a precise <strong className="text-serwa-secondary">1:1</strong> ratio with treatment shots,
+                it becomes three distinct professional services: Molecular Treatment, Botox Treatment, or Collagen Therapy.
               </p>
               <Link to="/shop/shampoo" className="btn-primary inline-block">
                 Shop Shampoo
@@ -147,7 +150,7 @@ const FlowingBottleSections = forwardRef<HTMLDivElement, FlowingBottleSectionsPr
       {/* ========== SECTION 3: Bottle joins carousel with other products ========== */}
       <section
         ref={section3Ref}
-        className="relative py-20 md:py-28 bg-serwa-secondary/5 overflow-hidden"
+        className="relative py-20 md:py-28 bg-serwa-accent/5 overflow-hidden"
       >
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -175,7 +178,7 @@ const FlowingBottleSections = forwardRef<HTMLDivElement, FlowingBottleSectionsPr
             <div className="flex-shrink-0 w-[280px] sm:w-[320px] snap-center">
               <Link
                 to="/shop/shampoo"
-                className="block bg-serwa-primary rounded-2xl overflow-hidden shadow-lg border border-serwa-secondary/10 hover:shadow-xl transition-shadow"
+                className="block bg-serwa-primary rounded-2xl overflow-hidden shadow-lg border border-serwa-accent/10 hover:shadow-xl transition-shadow"
               >
                 <div className="aspect-[3/4] flex items-center justify-center p-8 bg-gradient-to-b from-serwa-primary to-serwa-primary/80">
                   <img
@@ -201,7 +204,7 @@ const FlowingBottleSections = forwardRef<HTMLDivElement, FlowingBottleSectionsPr
               <div key={product.id} className="flex-shrink-0 w-[280px] sm:w-[320px] snap-center">
                 <Link
                   to={`/product/${product.handle}`}
-                  className="block bg-serwa-primary rounded-2xl overflow-hidden shadow-lg border border-serwa-secondary/10 hover:shadow-xl transition-shadow"
+                  className="block bg-serwa-primary rounded-2xl overflow-hidden shadow-lg border border-serwa-accent/10 hover:shadow-xl transition-shadow"
                 >
                   <div className="aspect-[3/4] flex items-center justify-center p-6 bg-serwa-primary/50">
                     <img

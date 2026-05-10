@@ -17,9 +17,11 @@ interface ProductCardProps {
   index?: number
   /** Layout: 'grid' for shop, 'carousel' for homepage */
   layout?: 'grid' | 'carousel'
+  /** When false, skip Framer scroll-in animation (e.g. infinite carousel) */
+  animated?: boolean
 }
 
-export default function ProductCard({ product, variant, index = 0, layout = 'grid' }: ProductCardProps) {
+export default function ProductCard({ product, variant, index = 0, layout = 'grid', animated = true }: ProductCardProps) {
   const { addToCart } = useShopify()
   const displayVariant = variant || product.variants[0]
   const hasMultipleVariants = product.variants.length > 1
@@ -50,10 +52,10 @@ export default function ProductCard({ product, variant, index = 0, layout = 'gri
         />
         {/* Quick add overlay - shown on hover for grid layout */}
         {layout === 'grid' && !hasMultipleVariants && (
-          <div className="absolute inset-0 bg-serwa-secondary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <div className="absolute inset-0 bg-serwa-accent/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
             <button
               onClick={handleAddToCart}
-              className="bg-serwa-accent text-white px-6 py-2 font-medium rounded hover:bg-pink-600 transition-colors"
+              className="btn-primary px-6 py-2 rounded"
             >
               Add to cart
             </button>
@@ -99,11 +101,17 @@ export default function ProductCard({ product, variant, index = 0, layout = 'gri
   }
 
   if (layout === 'carousel') {
+    const inner = (
+      <Link to={`/product/${product.handle}`} className="block group">
+        {cardContent}
+      </Link>
+    )
+    if (!animated) {
+      return <div className="w-full">{inner}</div>
+    }
     return (
       <motion.div {...animationProps} className="flex-shrink-0 w-64 md:w-72">
-        <Link to={`/product/${product.handle}`} className="block group">
-          {cardContent}
-        </Link>
+        {inner}
       </motion.div>
     )
   }

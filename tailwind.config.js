@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
-// SERWA Professional brand colors (from client specification):
+// SERWA Professional brand colors:
 // Primary: #f5f3f1 (ivory)
-// Secondary: #2F304D (navy blue)
-// Accent: #FA198B (pink)
-// Gold: #F9DC5C (accent highlight)
+// Secondary: #2E2E4A (deep navy — ink, primary buttons after pink↔navy swap)
+// Accent: #FF007F (hot pink — highlights, full-bleed panels after swap)
+// Gold: #F9DC5C
 
 export default {
   content: [
@@ -16,10 +16,10 @@ export default {
       colors: {
         // SERWA brand palette
         serwa: {
-          primary: '#f5f3f1',   // Ivory - primary background
-          secondary: '#2F304D', // Navy - text, headers
-          accent: '#FA198B',    // Pink - CTAs, highlights
-          gold: '#F9DC5C',     // Gold - accents, badges
+          primary: '#f5f3f1',
+          secondary: '#2E2E4A',
+          accent: '#FF007F',
+          gold: '#F9DC5C',
         },
       },
       fontFamily: {

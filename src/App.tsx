@@ -22,6 +22,7 @@ import HelpSupportPage from './pages/HelpSupportPage'
 import LegalPage from './pages/LegalPage'
 import FaqPage from './pages/FaqPage'
 import FeedbackPage from './pages/FeedbackPage'
+import AccountPage from './pages/AccountPage'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/shop/:collectionHandle" element={<ShopPage />} />
         <Route path="/product/:productHandle" element={<ProductPage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/account" element={<AccountPage />} />
         <Route path="/our-story" element={<OurStoryPage />} />
         <Route path="/education" element={<EducationPage />} />
         <Route path="/blog" element={<BlogPage />} />

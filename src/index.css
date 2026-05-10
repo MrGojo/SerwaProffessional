@@ -2,12 +2,29 @@
  * SERWA Professional - Global Styles
  * 
  * Tailwind directives + custom base styles.
- * Brand colors: #f5f3f1 (ivory), #2F304D (secondary), #FA198B (accent), #F9DC5C (gold)
+ * Brand colors: #f5f3f1 (ivory), #2E2E4A (secondary/navy), #FF007F (accent/pink), #F9DC5C (gold)
  */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .scrollbar-subtle {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(46, 46, 74, 0.35) transparent;
+  }
+  .scrollbar-subtle::-webkit-scrollbar {
+    height: 6px;
+  }
+  .scrollbar-subtle::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-subtle::-webkit-scrollbar-thumb {
+    background-color: rgba(46, 46, 74, 0.35);
+    border-radius: 9999px;
+  }
+}
 
 @layer base {
   /* Smooth scrolling for anchor links */
@@ -29,8 +46,8 @@
 @layer components {
   /* Reusable button styles */
   .btn-primary {
-    @apply bg-serwa-accent text-white px-6 py-3 font-medium transition-all duration-300 
-           hover:bg-pink-600 hover:shadow-lg;
+    @apply bg-serwa-secondary text-serwa-primary px-6 py-3 font-medium transition-all duration-300 
+           hover:bg-[#1A1A2E] hover:shadow-lg;
   }
   
   .btn-outline {

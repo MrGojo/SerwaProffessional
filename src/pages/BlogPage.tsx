@@ -71,7 +71,7 @@ export default function BlogPage() {
               transition={{ delay: i * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="aspect-[16/10] rounded-lg overflow-hidden bg-serwa-secondary/10 mb-4">
+              <div className="aspect-[16/10] rounded-lg overflow-hidden bg-serwa-accent/10 mb-4">
                 <img
                   src={post.image}
                   alt={post.title}

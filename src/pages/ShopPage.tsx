@@ -99,8 +99,8 @@ export default function ShopPage() {
                       onClick={() => setSelectedCategory(cat.value as ProductCategory | 'all')}
                       className={`block w-full text-left px-3 py-2 rounded transition-colors ${
                         selectedCategory === cat.value
-                          ? 'bg-serwa-secondary text-serwa-primary'
-                          : 'text-serwa-secondary/80 hover:bg-serwa-secondary/5'
+                          ? 'bg-serwa-accent text-serwa-primary'
+                          : 'text-serwa-secondary/80 hover:bg-serwa-accent/5'
                       }`}
                     >
                       {cat.label}
@@ -116,7 +116,7 @@ export default function ShopPage() {
               <select
                 value={sortBy}
                 onChange={e => setSortBy(e.target.value as SortOption)}
-                className="w-full px-3 py-2 border border-serwa-secondary/20 rounded bg-serwa-primary text-serwa-secondary focus:outline-none focus:ring-2 focus:ring-serwa-accent"
+                className="w-full px-3 py-2 border border-serwa-accent/20 rounded bg-serwa-primary text-serwa-secondary focus:outline-none focus:ring-2 focus:ring-serwa-accent"
               >
                 <option value="featured">Featured</option>
                 <option value="az">Alphabetically, A-Z</option>

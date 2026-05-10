@@ -33,11 +33,11 @@ export default function FaqPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1 }}
-            className="border border-serwa-secondary/20 rounded-lg overflow-hidden"
+            className="border border-serwa-accent/20 rounded-lg overflow-hidden"
           >
             <button
               onClick={() => setOpenIndex(openIndex === i ? null : i)}
-              className="w-full px-6 py-4 text-left font-medium text-serwa-secondary flex justify-between items-center hover:bg-serwa-secondary/5"
+              className="w-full px-6 py-4 text-left font-medium text-serwa-secondary flex justify-between items-center hover:bg-serwa-accent/5"
             >
               {item.q}
               <span className="text-serwa-accent">{openIndex === i ? '−' : '+'}</span>

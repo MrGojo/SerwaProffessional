@@ -62,7 +62,7 @@ export default function CartPage() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: i * 0.05 }}
-            className="flex gap-4 p-4 bg-white rounded-lg border border-serwa-secondary/10"
+            className="flex gap-4 p-4 bg-white rounded-lg border border-serwa-accent/10"
           >
             <img
               src={item.image || '/placeholder-product.svg'}
@@ -75,14 +75,14 @@ export default function CartPage() {
               <div className="flex items-center gap-2 mt-2">
                 <button
                   onClick={() => updateQuantity(item.variantId, item.quantity - 1)}
-                  className="w-8 h-8 rounded border border-serwa-secondary/30 hover:bg-serwa-secondary/5"
+                  className="w-8 h-8 rounded border border-serwa-accent/30 hover:bg-serwa-accent/5"
                 >
                   −
                 </button>
                 <span className="w-8 text-center">{item.quantity}</span>
                 <button
                   onClick={() => updateQuantity(item.variantId, item.quantity + 1)}
-                  className="w-8 h-8 rounded border border-serwa-secondary/30 hover:bg-serwa-secondary/5"
+                  className="w-8 h-8 rounded border border-serwa-accent/30 hover:bg-serwa-accent/5"
                 >
                   +
                 </button>

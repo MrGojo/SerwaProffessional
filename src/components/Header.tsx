@@ -130,9 +130,9 @@ export default function Header() {
   useEffect(() => () => clearCloseTimeout(), [])
 
   return (
-    <header ref={headerRef} className="sticky top-0 z-50 bg-serwa-primary/95 backdrop-blur-sm border-b border-serwa-secondary/10">
+    <header ref={headerRef} className="sticky top-0 z-50 bg-serwa-primary/95 backdrop-blur-sm border-b border-serwa-accent/10">
       {/* Optional top promo bar - toggle visibility or edit as needed */}
-      <div className="bg-serwa-secondary text-serwa-primary text-center py-2 px-4 text-sm">
+      <div className="bg-serwa-accent text-serwa-primary text-center py-2 px-4 text-sm">
         FLAT 10% Off On First Purchase. Code: <span className="font-semibold text-serwa-gold">FIRST10</span>
       </div>
 
@@ -212,8 +212,8 @@ export default function Header() {
                           className="relative w-full"
                         >
                           {/* Arrow - positioned under Shop link */}
-                          <div className="absolute -top-2 w-0 h-0 border-l-[8px] border-r-[8px] border-b-[8px] border-l-transparent border-r-transparent border-b-serwa-secondary drop-shadow-lg" style={{ left: `${shopLinkCenterX}px`, transform: 'translateX(-50%)' }} aria-hidden />
-                        <div className="relative bg-serwa-secondary rounded-b-2xl shadow-2xl overflow-hidden border-x-0 border-b border-t border-serwa-primary/10 backdrop-blur-sm w-full">
+                          <div className="absolute -top-2 w-0 h-0 border-l-[8px] border-r-[8px] border-b-[8px] border-l-transparent border-r-transparent border-b-serwa-accent drop-shadow-lg" style={{ left: `${shopLinkCenterX}px`, transform: 'translateX(-50%)' }} aria-hidden />
+                        <div className="relative bg-serwa-accent rounded-b-2xl shadow-2xl overflow-hidden border-x-0 border-b border-t border-serwa-primary/10 backdrop-blur-sm w-full">
                           <div className="py-8 px-8 md:px-12 flex flex-wrap">
                             <div className="flex-1 min-w-0 flex-grow-[2]">
                             <h4 className="font-serif font-semibold text-serwa-primary text-sm uppercase tracking-wider mb-6">
@@ -225,7 +225,7 @@ export default function Header() {
                                 return (
                                   <div key={item.label} className="min-w-0">
                                     <Link to={item.to} onClick={() => setShopDropdownOpen(false)} className="block mb-3">
-                                      <h5 className="font-semibold text-serwa-primary text-sm uppercase tracking-wide mb-3 hover:text-serwa-accent transition-colors">
+                                      <h5 className="font-semibold text-serwa-primary text-sm uppercase tracking-wide mb-3 hover:text-serwa-gold transition-colors">
                                         {item.label}
                                       </h5>
                                     </Link>
@@ -265,7 +265,7 @@ export default function Header() {
                               <Link
                                 to="/shop"
                                 onClick={() => setShopDropdownOpen(false)}
-                                className="inline-flex items-center text-sm font-semibold text-serwa-accent hover:text-serwa-gold transition-colors"
+                                className="inline-flex items-center text-sm font-semibold text-serwa-gold hover:text-serwa-primary transition-colors"
                               >
                                 Shop All
                                 <svg className="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -310,10 +310,9 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </button>
-            {/* Account - placeholder */}
             <Link
-              to="/"
-              className="p-2 text-serwa-secondary hover:text-serwa-accent transition-colors hidden sm:block"
+              to="/account"
+              className="p-2 text-serwa-secondary hover:text-serwa-accent transition-colors"
               aria-label="Account"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -347,7 +346,7 @@ export default function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="md:hidden border-t border-serwa-secondary/10 bg-serwa-primary"
+            className="md:hidden border-t border-serwa-accent/10 bg-serwa-primary"
           >
             <nav className="py-4 px-4 flex flex-col gap-1">
               {navLinks.map(link => (
@@ -367,6 +366,13 @@ export default function Header() {
                   </Link>
                 )
               ))}
+              <Link
+                to="/account"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-serwa-secondary hover:text-serwa-accent font-medium py-3 px-2 border-t border-serwa-accent/10 mt-2 pt-4"
+              >
+                Account
+              </Link>
             </nav>
           </motion.div>
         )}
@@ -380,7 +386,7 @@ function MobileShopSubmenu({ onLinkClick }: { onLinkClick: () => void }) {
   const [expanded, setExpanded] = useState(false)
 
   return (
-    <div className="border-b border-serwa-secondary/10 pb-3">
+    <div className="border-b border-serwa-accent/10 pb-3">
       <button
         onClick={() => setExpanded(!expanded)}
         className="flex items-center justify-between w-full text-serwa-secondary hover:text-serwa-accent font-medium py-3 px-2 text-left"
@@ -404,7 +410,7 @@ function MobileShopSubmenu({ onLinkClick }: { onLinkClick: () => void }) {
             transition={{ duration: 0.25, ease: 'easeOut' }}
             className="overflow-hidden"
           >
-            <div className="pl-4 pt-3 space-y-4 bg-serwa-secondary/5 rounded-xl p-5 mt-3 border border-serwa-secondary/10">
+            <div className="pl-4 pt-3 space-y-4 bg-serwa-accent/5 rounded-xl p-5 mt-3 border border-serwa-accent/10">
               <div>
                 <h4 className="font-serif font-semibold text-serwa-secondary text-sm mb-4 tracking-wide">
                   SERWA Products
@@ -423,14 +429,14 @@ function MobileShopSubmenu({ onLinkClick }: { onLinkClick: () => void }) {
                   <Link 
                     to="/shop" 
                     onClick={onLinkClick} 
-                    className="block text-sm py-2 px-3 rounded-lg text-serwa-accent hover:text-serwa-primary hover:bg-serwa-accent/10 transition-colors font-semibold col-span-2 text-center border-t border-serwa-secondary/10 pt-3 mt-2"
+                    className="block text-sm py-2 px-3 rounded-lg text-serwa-accent hover:text-serwa-primary hover:bg-serwa-accent/10 transition-colors font-semibold col-span-2 text-center border-t border-serwa-accent/10 pt-3 mt-2"
                   >
                     Shop All
                   </Link>
                 </div>
               </div>
               {/* Mobile: nested product lists per category */}
-              <div className="space-y-4 pt-3 border-t border-serwa-secondary/10">
+              <div className="space-y-4 pt-3 border-t border-serwa-accent/10">
                 {shopCategories.map(cat => {
                   const categoryProducts = getProductsByCategory(cat.handle)
                   if (categoryProducts.length === 0) return null

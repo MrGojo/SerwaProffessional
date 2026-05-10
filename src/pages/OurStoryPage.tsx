@@ -26,7 +26,7 @@ export default function OurStoryPage() {
             transition={{ delay: 0.2 }}
             className="text-lg text-serwa-secondary/80"
           >
-            This is not a game changer. The game is changed. One brand. One belief. One complete solution.
+            In the beginning, there was a question — not a business question, not a market gap. A deeper one.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ export default function OurStoryPage() {
             transition={{ delay: 0.3 }}
             className="text-xl font-serif italic text-serwa-secondary/90 mt-4"
           >
-            SERWA doesn&apos;t ask you to choose between treatments. It asks you to choose clarity.
+            Why does hair get temporary beauty… but never completeness?
           </motion.p>
         </div>
       </section>
@@ -48,55 +48,108 @@ export default function OurStoryPage() {
           className="prose prose-lg max-w-none"
         >
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-serwa-secondary mb-6">
-            How did SERWA Professional come into existence?
+            The meaning of Serwa
           </h2>
           <p className="text-serwa-secondary/80 mb-8 leading-relaxed">
-            Serwa Professional and the founders didn&apos;t begin with the product — it began with a question. Why does beauty always ask us to choose between science and soul, between what works and what feels beautiful? We refused that choice. This brand was built in the quiet space between formulation and feeling — where precision meets intuition. Every molecule, every texture, every result is designed not just to perform, but to mean something.
+            In Sanskrit, the word <strong className="text-serwa-secondary">Serwa</strong> means
+            <strong className="text-serwa-secondary"> complete</strong>. Whole. Entire. Nothing missing.
+            And that is where our story begins.
           </p>
+          <p className="text-serwa-secondary/80 mb-10 leading-relaxed">
+            Serwa was not created inside a boardroom. It was born inside salons — in conversations between
+            stylists and clients. In the silent frustration of damaged strands. In the exhaustion of repeated
+            chemical services. In the moment when a client would look in the mirror and say,
+            <em> “It looks good… but it doesn’t feel healthy.”</em>
+            <br />
+            That “but” became our mission.
+          </p>
+
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-serwa-secondary mb-6">
+            Why we exist
+          </h2>
           <p className="text-serwa-secondary/80 mb-8 leading-relaxed">
-            As beauty, at its highest level, is not decoration — it is engineering with intention. We believe transformation should be intelligent and that results should be measurable. Luxury should never be loud — it should be certain. Our work is driven by research, perfected by craft, and elevated by restraint. At Serwa Professional we promise to create systems, not trends; solutions, not promises. Performance that speaks for itself from the first use.
+            We realized something powerful — most treatments were solving one problem at a time.
+            Shine without strength. Smoothness without repair. Softness without structure.
+            Surface beauty without internal healing.
           </p>
           <p className="text-serwa-secondary/80 mb-12 leading-relaxed">
-            This is beauty that respects time and understands structure. It doesn&apos;t chase attention — because it earns trust. We are here for those who see beauty as discipline, for professionals, performers and purists. For those who know that true excellence is quiet, deliberate, and uncompromising. This is not a universe of products. It is a universe of performance.
+            And so Serwa was created with one belief:
+            <br />
+            <strong className="text-serwa-secondary">Beauty is incomplete without restoration.</strong>
+            <br />
+            <strong className="text-serwa-secondary">Repair is incomplete without structure.</strong>
+            <br />
+            <strong className="text-serwa-secondary">And treatment is incomplete without freedom.</strong>
           </p>
 
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-serwa-secondary mb-6">
-            Who are we as a brand?
+            Molecular 360 — a complete circle
           </h2>
           <p className="text-serwa-secondary/80 mb-8 leading-relaxed">
-            We believe brands are not built in factories — they are built in hands. In the hands that mix, test, revise and begin again. We refuse to believe in shortcuts — even when no one is watching. This brand exists because people do, because behind every formulation is a human who cared enough to perfect it, who stepped up at all stages where the product required effort, patience, and an uncompromising eye for excellence. We believe that beauty reaches its highest form when it is guided by those who respect the process as much as the outcome.
+            That is why the next evolution was named <strong className="text-serwa-secondary">Molecular 360</strong>.
+            Three hundred and sixty degrees. Not partial. Not halfway. A complete circle of transformation.
           </p>
           <p className="text-serwa-secondary/80 mb-8 leading-relaxed">
-            Our foundation is hair, but our philosophy goes deeper. We honour structure, strength, and transformation at every stage. From concept to creation, from first touch to lasting performance, nothing here is accidental. The founder is not outside the story. They are a part of it. Having stood at every level of the journey, they understand the labour it takes to create something truly refined.
+            Molecular 360 was designed on a simple yet revolutionary thought — what if one core technology
+            could create multiple solutions? What if a stylist did not need ten different systems, but one
+            intelligent foundation?
           </p>
           <p className="text-serwa-secondary/80 mb-12 leading-relaxed">
-            Luxury to us is not excess. It is intention. It is consistency. It is people who show up, again and again, to do things properly. We don&apos;t chase perfection. We practice it. This is a brand shaped by belief, built by people, and defined by excellence — in hair, in craft, in everything we touch.
+            At the heart of Molecular 360 lies the <strong className="text-serwa-secondary">Reconstruction Cream</strong>.
+            This is not just a product. It is the engine. Powered by precision. Activated by fusion.
           </p>
 
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-serwa-secondary mb-6">
-            Why choose SERWA Professional over pre-existing brands?
+            One intelligent core. Three outcomes.
           </h2>
           <p className="text-serwa-secondary/80 mb-8 leading-relaxed">
-            Serwa Professional is not about having options. It is about following the right system. The pre-existing market products have trained stylists to layer solutions — treatments from one brand, botox from another and collagen from the third — hoping the combination will deliver results. What it actually delivered was incoherence.
+            This single reconstructor, when mixed in a precise <strong className="text-serwa-secondary">1:1 ratio</strong>
+            with different treatment shots, transforms into three completely distinct professional services:
+            The Molecular Treatment. The Botox Treatment. The Collagen Therapy.
+            <strong className="text-serwa-secondary"> Same base. Different outcome. Complete control.</strong>
           </p>
-          <p className="text-serwa-secondary/80 mb-8 leading-relaxed">
-            At Serwa Professional we questioned this fragmentation. <strong className="text-serwa-secondary">One philosophy. One system. One solution.</strong> Molecular 360 is not a replacement born out of trends — it is an evolution of brands understanding hair at its fundamental level. Instead of asking hair to adapt to multiple treatments, we built a single molecular system that works with the hair&apos;s internal structure. Treatments smooth. Botox fills. Collagen coats. <strong className="text-serwa-secondary">Molecular 360 works at the molecular level</strong> where strength, elasticity, repair, and longevity actually begin.
-          </p>
+          <div className="grid gap-6 md:grid-cols-3 not-prose mb-12">
+            <div className="rounded-xl border border-serwa-accent/10 bg-white/40 p-5">
+              <h3 className="font-serif text-lg font-semibold text-serwa-secondary mb-2">Molecular Treatment</h3>
+              <p className="text-sm text-serwa-secondary/80 leading-relaxed">
+                Deep structural restoration. Rebuilds broken bonds, restores elasticity, corrects internal damage.
+                Strength and resilience with controlled smoothness.
+              </p>
+            </div>
+            <div className="rounded-xl border border-serwa-accent/10 bg-white/40 p-5">
+              <h3 className="font-serif text-lg font-semibold text-serwa-secondary mb-2">Botox Treatment</h3>
+              <p className="text-sm text-serwa-secondary/80 leading-relaxed">
+                Surface refinement and internal filling. Reduces porosity, enhances smoothness, eliminates frizz,
+                and brings visible fullness and gloss.
+              </p>
+            </div>
+            <div className="rounded-xl border border-serwa-accent/10 bg-white/40 p-5">
+              <h3 className="font-serif text-lg font-semibold text-serwa-secondary mb-2">Collagen Therapy</h3>
+              <p className="text-sm text-serwa-secondary/80 leading-relaxed">
+                Flexibility and hydration. Restores moisture balance, improves softness and movement, and creates
+                natural shine without stiffness.
+              </p>
+            </div>
+          </div>
 
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-serwa-secondary mb-6">
-            Why not rely on multiple brands?
+            Freedom for the stylist
           </h2>
           <p className="text-serwa-secondary/80 mb-8 leading-relaxed">
-            Different brands mean mixing intentions. Different brands are built on different formulations, philosophies, and performance goals — when layered together, they often compete rather than collaborate, leading to inconsistent results, over-processing, and dependency on repeated treatments.
+            Serwa did not only aim to complete hair. It aimed to complete professional freedom.
+            With Molecular 360, the stylist becomes the creator. You assess the hair. You diagnose the damage.
+            You understand the client’s desire. Then you choose — strength, smoothness, or hydration.
+            You decide the fusion. You control the result.
           </p>
-          <p className="text-serwa-secondary/80 mb-8 leading-relaxed">
-            <strong className="text-serwa-secondary">Serwa promises to remove this uncertainty.</strong> With Molecular 360: Stylists don&apos;t have to compromise between treatments. Consumers don&apos;t have to chase solutions. Hair doesn&apos;t have to recover from over-treatment. Everything works in alignment, not overlap.
+          <p className="text-serwa-secondary/80 mb-6 leading-relaxed">
+            It is science that listens to artistry. Instead of selling a pre-decided solution, you design a customized
+            experience. Each client feels personally treated. Each service feels tailored. Each outcome feels intentional.
           </p>
         </motion.div>
       </section>
 
       {/* Quote section */}
-      <section className="py-16 bg-serwa-secondary/5">
+      <section className="py-16 bg-serwa-accent/5">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <motion.blockquote
             initial={{ opacity: 0 }}
@@ -104,7 +157,7 @@ export default function OurStoryPage() {
             viewport={{ once: true }}
             className="font-serif text-2xl md:text-3xl text-serwa-secondary italic"
           >
-            &ldquo;Beauty begins at the molecule.&rdquo;
+            &ldquo;Not temporary beauty. Not partial repair. Complete transformation.&rdquo;
           </motion.blockquote>
         </div>
       </section>

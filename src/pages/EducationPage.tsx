@@ -6,31 +6,137 @@
 
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import petaCertifiedIcon from '../../images/peta certified.png'
 
-const professionalAdvantages = [
+type AdvantageIconType =
+  | 'customizing'
+  | 'activation'
+  | 'multiBenefit'
+  | 'safeFormula'
+  | 'noRinse'
+  | 'inventory'
+  | 'sulphate'
+  | 'paraben'
+  | 'peta'
+
+type ProfessionalAdvantage = {
+  title: string
+  description: string
+  icon: AdvantageIconType
+}
+
+function AdvantageIcon({ type }: { type: AdvantageIconType }) {
+  if (!type) return null
+
+  return (
+    <div className="w-12 h-12 rounded-xl bg-serwa-accent/5 border border-serwa-accent/10 flex items-center justify-center shrink-0 overflow-hidden">
+      {type === 'customizing' && (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 text-serwa-secondary" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="m4 19 4.2-1 10-10a1.8 1.8 0 0 0-2.5-2.5l-10 10L4 19Z" />
+          <path d="m13.5 6.5 4 4" />
+        </svg>
+      )}
+      {type === 'activation' && (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 text-serwa-secondary" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M9 3v6" />
+          <path d="M15 9V3" />
+          <path d="M7 13h10" />
+          <path d="M10 21h4" />
+          <path d="M8 9h8v4a4 4 0 0 1-4 4 4 4 0 0 1-4-4V9Z" />
+        </svg>
+      )}
+      {type === 'multiBenefit' && (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 text-serwa-secondary" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M12 3v18" />
+          <path d="M3 12h18" />
+          <path d="m5 5 14 14" />
+          <path d="m19 5-14 14" />
+        </svg>
+      )}
+      {type === 'safeFormula' && (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 text-serwa-secondary" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M12 3 5 6v6c0 4.4 2.8 7.3 7 9 4.2-1.7 7-4.6 7-9V6l-7-3Z" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      )}
+      {type === 'noRinse' && (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 text-serwa-secondary" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M12 3c2.8 3 5.5 6.4 5.5 10a5.5 5.5 0 1 1-11 0c0-3.6 2.7-7 5.5-10Z" />
+          <path d="M6 18 18 6" />
+        </svg>
+      )}
+      {type === 'inventory' && (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 text-serwa-secondary" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <rect x="4" y="7" width="16" height="12" rx="2" />
+          <path d="M8 7V5h8v2" />
+          <path d="M8 12h8" />
+        </svg>
+      )}
+      {type === 'sulphate' && (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 text-serwa-secondary" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M12 3c2.8 3 5.5 6.4 5.5 10a5.5 5.5 0 1 1-11 0c0-3.6 2.7-7 5.5-10Z" />
+          <path d="M6 18 18 6" />
+        </svg>
+      )}
+      {type === 'paraben' && (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 text-serwa-secondary" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <rect x="8" y="4" width="8" height="3.5" rx="1" />
+          <path d="M9 7.5v11a2.5 2.5 0 0 0 2.5 2.5h1A2.5 2.5 0 0 0 15 18.5v-11" />
+          <path d="M5 19 19 5" />
+        </svg>
+      )}
+      {type === 'peta' && (
+        <img src={petaCertifiedIcon} alt="PETA certified icon" className="w-full h-full object-cover" />
+      )}
+    </div>
+  )
+}
+
+const professionalAdvantages: ProfessionalAdvantage[] = [
   {
     title: 'Customizing',
     description: 'Stylist selects the right treatment (nanoplastia, botox and protein) for each client without carrying separate treatments.',
+    icon: 'customizing',
   },
   {
     title: 'Instant Activation',
     description: 'Easy to prepare — Mix shot + Base Cream, Apply, Process, Rinse.',
+    icon: 'activation',
   },
   {
     title: 'Multi-Benefit System',
     description: 'Smoothness, repair, strength, and hydration achieved in one range.',
+    icon: 'multiBenefit',
   },
   {
     title: 'Safe Formula',
     description: 'Formaldehyde-free, designed for professional salon use.',
+    icon: 'safeFormula',
   },
   {
     title: 'No Rinse Required',
     description: 'All the nutrients stay locked inside your hair, ensuring deeper repair, enhanced smoothness, and extended shine.',
+    icon: 'noRinse',
   },
   {
     title: 'Simplified Inventory',
     description: 'No extra inventory needed — one cream + three ampoules replaces multiple separate products.',
+    icon: 'inventory',
+  },
+  {
+    title: 'No Sulphate',
+    description: 'Gentle cleansing care that helps preserve hair health and treatment longevity.',
+    icon: 'sulphate',
+  },
+  {
+    title: 'No Paraben',
+    description: 'Paraben-free formula aligned with clean, professional salon standards.',
+    icon: 'paraben',
+  },
+  {
+    title: 'PETA Certified',
+    description: 'Cruelty-free commitment backed by trusted certification standards.',
+    icon: 'peta',
   },
 ]
 
@@ -109,7 +215,7 @@ export default function EducationPage() {
       </section>
 
       {/* Professional Advantages */}
-      <section className="py-12 md:py-20 bg-serwa-secondary/5">
+      <section className="py-12 md:py-20 bg-serwa-accent/5">
         <div className="max-w-6xl mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -127,12 +233,15 @@ export default function EducationPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
-                className="bg-serwa-primary/50 rounded-xl p-6 border border-serwa-secondary/10"
+                className="bg-serwa-primary/50 rounded-xl p-6 border border-serwa-accent/10"
               >
-                <h3 className="font-serif text-lg font-semibold text-serwa-secondary mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-serwa-secondary/80 text-sm leading-relaxed">
+                <div className="flex items-center gap-4">
+                  <AdvantageIcon type={item.icon} />
+                  <h3 className="font-serif text-lg font-semibold text-serwa-secondary">
+                    {item.title}
+                  </h3>
+                </div>
+                <p className="text-serwa-secondary/80 text-sm leading-relaxed mt-4">
                   {item.description}
                 </p>
               </motion.div>

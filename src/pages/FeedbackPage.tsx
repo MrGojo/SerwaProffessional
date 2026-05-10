@@ -53,7 +53,7 @@ export default function FeedbackPage() {
             <label className="block font-medium text-serwa-secondary mb-2">Name</label>
             <input
               type="text"
-              className="w-full px-4 py-3 border border-serwa-secondary/20 rounded focus:outline-none focus:ring-2 focus:ring-serwa-accent"
+              className="w-full px-4 py-3 border border-serwa-accent/20 rounded focus:outline-none focus:ring-2 focus:ring-serwa-accent"
               placeholder="Your name"
               required
             />
@@ -62,7 +62,7 @@ export default function FeedbackPage() {
             <label className="block font-medium text-serwa-secondary mb-2">Email</label>
             <input
               type="email"
-              className="w-full px-4 py-3 border border-serwa-secondary/20 rounded focus:outline-none focus:ring-2 focus:ring-serwa-accent"
+              className="w-full px-4 py-3 border border-serwa-accent/20 rounded focus:outline-none focus:ring-2 focus:ring-serwa-accent"
               placeholder="your@email.com"
               required
             />
@@ -71,7 +71,7 @@ export default function FeedbackPage() {
             <label className="block font-medium text-serwa-secondary mb-2">Feedback</label>
             <textarea
               rows={5}
-              className="w-full px-4 py-3 border border-serwa-secondary/20 rounded focus:outline-none focus:ring-2 focus:ring-serwa-accent"
+              className="w-full px-4 py-3 border border-serwa-accent/20 rounded focus:outline-none focus:ring-2 focus:ring-serwa-accent"
               placeholder="Your feedback..."
               required
             />

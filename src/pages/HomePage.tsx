@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { products } from '../data/products'
 import ProductCard from '../components/ProductCard'
+import InfiniteProductRangeCarousel from '../components/InfiniteProductRangeCarousel'
 
 // Use your shampoo bottle image - add it to public/shampoo-bottle.jpg
 const SHAMPOO_BOTTLE_IMG = '/shampoo-bottle.jpg'
@@ -24,8 +25,6 @@ const staggerContainer = {
 }
 
 export default function HomePage() {
-  // Featured products for hero carousel - Treatment, Mask, Serum
-  const featuredProducts = products.filter(p => p.featured)
   const bestsellers = products.slice(0, 4) // First 4 as placeholders
 
   return (
@@ -228,20 +227,7 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          {/* Product carousel - horizontal scroll on mobile, grid on desktop */}
-          <motion.div
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="flex gap-6 overflow-x-auto pb-4 md:overflow-visible md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 snap-x snap-mandatory"
-          >
-            {featuredProducts.map((product, i) => (
-              <div key={product.id} className="snap-center flex-shrink-0 md:flex-shrink">
-                <ProductCard product={product} index={i} layout="carousel" />
-              </div>
-            ))}
-          </motion.div>
+          <InfiniteProductRangeCarousel products={products} />
 
           <motion.div
             initial={{ opacity: 0 }}
@@ -265,7 +251,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="grid md:grid-cols-2 gap-8 md:gap-12 items-center"
           >
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden bg-serwa-secondary/10">
+            <div className="relative aspect-[4/5] rounded-lg overflow-hidden bg-serwa-accent/10">
               <img
                 src="/placeholder-product.svg"
                 alt="Hair care"
@@ -290,7 +276,7 @@ export default function HomePage() {
       </section>
 
       {/* ========== BANNER 2 - "Scalp problems" style ========== */}
-      <section className="py-16 md:py-24 bg-serwa-secondary text-serwa-primary">
+      <section className="py-16 md:py-24 bg-serwa-accent text-serwa-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -299,10 +285,10 @@ export default function HomePage() {
             className="grid md:grid-cols-2 gap-8 md:gap-12 items-center"
           >
             <div className="order-2 md:order-1">
-              <p className="text-serwa-accent font-medium uppercase tracking-wider text-sm mb-2">
+              <p className="text-serwa-secondary font-medium uppercase tracking-wider text-sm mb-2">
                 Want to break-free of
               </p>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-serwa-primary mb-6">
                 Scalp problems?
               </h2>
               <p className="text-serwa-primary/80 mb-6">
@@ -310,7 +296,7 @@ export default function HomePage() {
                 consumers don&apos;t have to chase solutions, and hair doesn&apos;t have to recover from over-treatment. 
                 Everything works in alignment, not overlap.
               </p>
-              <Link to="/shop/shampoo" className="btn-primary inline-block bg-serwa-accent hover:bg-pink-600">
+              <Link to="/shop/shampoo" className="btn-primary inline-block">
                 Explore More
               </Link>
             </div>
@@ -334,7 +320,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="grid md:grid-cols-2 gap-8 md:gap-12 items-center"
           >
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden bg-serwa-secondary/10">
+            <div className="relative aspect-[4/5] rounded-lg overflow-hidden bg-serwa-accent/10">
               <img
                 src="/placeholder-product.svg"
                 alt="Hair color"
@@ -361,7 +347,7 @@ export default function HomePage() {
       </section>
 
       {/* ========== BESTSELLERS - BIOTOP style grid ========== */}
-      <section className="py-16 md:py-24 bg-serwa-primary border-t border-serwa-secondary/10">
+      <section className="py-16 md:py-24 bg-serwa-primary border-t border-serwa-accent/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
