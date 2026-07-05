@@ -48,7 +48,7 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-serif text-3xl md:text-5xl lg:text-6xl font-semibold text-serwa-secondary mb-6 leading-tight"
             >
-              This is not a game changer. The game is changed.
+              This is not a game changer, The game is changed.
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -56,16 +56,21 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-base md:text-lg text-serwa-secondary/90 max-w-2xl mx-auto md:mx-0 mb-4"
             >
-              The future of hair care is integrated, intelligent, and intentional.
+              The future of hair care is Integrated, Intelligent and Intentional.
             </motion.p>
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-lg md:text-xl text-serwa-secondary/80 max-w-2xl mx-auto md:mx-0 italic"
+              className="max-w-2xl mx-auto md:mx-0 space-y-1 text-serwa-secondary/90 italic"
             >
-              One brand. One belief. One complete solution. Beauty begins at the molecule.
-            </motion.p>
+              <p className="text-base md:text-lg">One brand.</p>
+              <p className="text-lg md:text-xl">One belief.</p>
+              <p className="text-xl md:text-2xl">One complete solution.</p>
+              <p className="text-xl md:text-3xl lg:text-4xl font-bold underline not-italic text-serwa-secondary">
+                Beauty begins at the molecule.
+              </p>
+            </motion.div>
           </div>
 
           {/* Hero image placeholder - Right side */}
@@ -111,7 +116,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 className="text-serwa-accent font-medium uppercase tracking-wider text-sm mb-4"
               >
-                Our Story
+                Why We Exist?
               </motion.p>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -129,8 +134,11 @@ export default function HomePage() {
                 transition={{ delay: 0.2 }}
                 className="text-serwa-secondary/80 text-lg max-w-xl mb-8"
               >
-                Serwa Professional began with a question: why does beauty ask us to choose between science and soul? 
-                We refused that choice. Built in the space between formulation and feeling — where precision meets intuition.
+                Serwa Professional began with a question: Why does beauty ask us to choose between science and soul?
+
+We refused that choice.
+
+Serwa Professional was built in the space between formulation and feeling—where precision meets intuition.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -147,25 +155,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ========== SHAMPOO SECTION - With shampoo image on right ========== */}
+      {/* ========== SHOTS SECTION - Star product ========== */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-serwa-primary py-20">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-16 min-h-[70vh]">
-            {/* Shampoo image - Right side (empty space) */}
             <div className="flex-shrink-0 w-full md:w-1/2 max-w-md flex justify-center md:justify-end">
               <div className="relative w-full max-w-sm aspect-[3/5]">
                 <img
-                  src={SHAMPOO_BOTTLE_IMG}
-                  alt="SERWA Professional Shampoo"
+                  src="/placeholder-product.svg"
+                  alt="SERWA Professional Shots"
                   className="w-full h-full object-contain object-center drop-shadow-2xl"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = '/placeholder-product.svg'
-                  }}
                 />
               </div>
             </div>
 
-            {/* Product content - Left side */}
             <div className="flex-1 max-w-xl text-center md:text-left z-10">
               <motion.p
                 initial={{ opacity: 0 }}
@@ -173,7 +176,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 className="text-serwa-accent font-medium uppercase tracking-wider text-sm mb-4"
               >
-                Professional Shampoo
+                Our Star Product
               </motion.p>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -182,7 +185,7 @@ export default function HomePage() {
                 transition={{ delay: 0.1 }}
                 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-serwa-secondary mb-6"
               >
-                Clean. Nourish. Protect.
+                Molecular 360 Shots
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -191,8 +194,9 @@ export default function HomePage() {
                 transition={{ delay: 0.2 }}
                 className="text-serwa-secondary/80 text-lg mb-8"
               >
-                No rinse required. All nutrients stay locked inside your hair for deeper repair, 
-                enhanced smoothness, and extended shine. Formaldehyde-free, designed for professional salon use.
+                One cream. Three ampoules. Mix shot + Reconstruction Cream in a 1:1 ratio to create Molecular,
+                Blowtox, or Collagen outcomes — smoothness, repair, and hydration in one intelligent system.
+                Instant activation. No extra inventory. Complete professional control.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -200,8 +204,8 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
               >
-                <Link to="/shop/shampoo" className="btn-primary inline-block">
-                  Shop Shampoo
+                <Link to="/shop/shots" className="btn-primary inline-block">
+                  Shop Shots
                 </Link>
               </motion.div>
             </div>
@@ -264,7 +268,7 @@ export default function HomePage() {
                 Chemically-treated or damaged hair
               </h2>
               <p className="text-serwa-secondary/80 mb-6">
-                Treatments smooth. Botox fills. Collagen coats. Molecular 360 works at the molecular level 
+                Treatments smooth. Blowtox fills. Collagen coats. Molecular 360 works at the molecular level 
                 where strength, elasticity, repair, and longevity actually begin. One philosophy. One system. One solution.
               </p>
               <Link to="/shop/conditioner" className="btn-primary inline-block">
@@ -311,7 +315,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ========== BANNER 3 - "Hues & tones" style ========== */}
+      {/* ========== BANNER 3 - Professional system ========== */}
       <section className="py-16 md:py-24 bg-serwa-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -323,23 +327,24 @@ export default function HomePage() {
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden bg-serwa-accent/10">
               <img
                 src="/placeholder-product.svg"
-                alt="Hair color"
+                alt="Molecular 360 professional treatment"
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
               <p className="text-serwa-accent font-medium uppercase tracking-wider text-sm mb-2">
-                Bring back those
+                Built for professionals
               </p>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-serwa-secondary mb-6">
-                Hues & tones
+                One system. Three outcomes.
               </h2>
               <p className="text-serwa-secondary/80 mb-6">
-                Hair isn&apos;t a problem to fix — it&apos;s a canvas to empower. Serwa exists to end the compromise 
-                between health and transformation. Created by professionals who believed hair deserved more than correction.
+                Hair isn&apos;t a problem to fix — it&apos;s a canvas to empower. Mix Reconstruction Cream with
+                Molecular, Blowtox, or Collagen shots in a 1:1 ratio and deliver strength, smoothness, or hydration
+                without juggling multiple brands. Formaldehyde-free. Salon-ready. Designed for real results.
               </p>
-              <Link to="/shop" className="btn-outline inline-block">
-                Buy Now
+              <Link to="/shop/shots" className="btn-outline inline-block">
+                Explore Shots
               </Link>
             </div>
           </motion.div>

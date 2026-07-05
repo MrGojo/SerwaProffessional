@@ -131,7 +131,7 @@ const FlowingBottleSections = forwardRef<HTMLDivElement, FlowingBottleSectionsPr
                 One intelligent foundation, not ten different systems. At the heart of Molecular 360 lies the
                 <strong className="text-serwa-secondary"> Reconstruction Cream</strong> — the engine.
                 Mixed in a precise <strong className="text-serwa-secondary">1:1</strong> ratio with treatment shots,
-                it becomes three distinct professional services: Molecular Treatment, Botox Treatment, or Collagen Therapy.
+                it becomes three distinct professional services: Molecular Treatment, Blowtox Treatment, or Collagen Therapy.
               </p>
               <Link to="/shop/shampoo" className="btn-primary inline-block">
                 Shop Shampoo

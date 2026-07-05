@@ -94,8 +94,8 @@ function AdvantageIcon({ type }: { type: AdvantageIconType }) {
 
 const professionalAdvantages: ProfessionalAdvantage[] = [
   {
-    title: 'Customizing',
-    description: 'Stylist selects the right treatment (nanoplastia, botox and protein) for each client without carrying separate treatments.',
+    title: 'Customization',
+    description: 'Stylist selects the right treatment (nanoplastia, Blowtox and protein) for each client without carrying separate treatments.',
     icon: 'customizing',
   },
   {
@@ -112,11 +112,6 @@ const professionalAdvantages: ProfessionalAdvantage[] = [
     title: 'Safe Formula',
     description: 'Formaldehyde-free, designed for professional salon use.',
     icon: 'safeFormula',
-  },
-  {
-    title: 'No Rinse Required',
-    description: 'All the nutrients stay locked inside your hair, ensuring deeper repair, enhanced smoothness, and extended shine.',
-    icon: 'noRinse',
   },
   {
     title: 'Simplified Inventory',
@@ -187,7 +182,7 @@ export default function EducationPage() {
               Serwa Professional is a premium house of promoting new-age technology and innovation in the cosmetics industry with the evolving growth of science, simplicity and self-expression. It is a <strong>tri-therapy treatment</strong>, marking the beginning of next-generation technology promising hair restoration and straightening powered by molecular technology.
             </p>
             <p className="text-serwa-secondary/80 mb-6 leading-relaxed">
-              The molecular treatment is the first-generation customisable treatment. It isn&apos;t just a treatment — it&apos;s a transformation ritual, where science meets sensorial artistry. This tailor-made treatment allows experienced stylists and end consumers to craft hair care as unique as every strand can get. Each formula blends targeted shots of Nanoplastia, Botox or Collagen Protein with the game-changing Restructuring Cream to create smooth, straight results — working deep within the fibre and renewing strength.
+              The molecular treatment is the first-generation customisable treatment. It isn&apos;t just a treatment — it&apos;s a transformation ritual, where science meets sensorial artistry. This tailor-made treatment allows experienced stylists and end consumers to craft hair care as unique as every strand can get. Each formula blends targeted shots of Nanoplastia, Blowtox or Collagen Protein with the game-changing Restructuring Cream to create smooth, straight results — working deep within the fibre and renewing strength.
             </p>
             <p className="text-serwa-secondary/80 leading-relaxed">
               While creating the brand, the founders believed at heart that true beauty begins with the strength and resilience of each molecule. Immense care was taken to honour individuality, creating hair that isn&apos;t just transformed — but crafted in pursuit of perfection.

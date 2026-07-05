@@ -105,25 +105,25 @@ export default function OurStoryPage() {
           <p className="text-serwa-secondary/80 mb-8 leading-relaxed">
             This single reconstructor, when mixed in a precise <strong className="text-serwa-secondary">1:1 ratio</strong>
             with different treatment shots, transforms into three completely distinct professional services:
-            The Molecular Treatment. The Botox Treatment. The Collagen Therapy.
+            The Molecular Treatment. The Blowtox Treatment. The Collagen Therapy.
             <strong className="text-serwa-secondary"> Same base. Different outcome. Complete control.</strong>
           </p>
           <div className="grid gap-6 md:grid-cols-3 not-prose mb-12">
-            <div className="rounded-xl border border-serwa-accent/10 bg-white/40 p-5">
-              <h3 className="font-serif text-lg font-semibold text-serwa-secondary mb-2">Molecular Treatment</h3>
+            <div className="rounded-xl border-2 border-serwa-accent bg-serwa-accent/10 p-5 shadow-[0_0_28px_rgba(255,0,127,0.35)] ring-1 ring-serwa-accent/40">
+              <h3 className="font-serif text-lg font-semibold text-serwa-accent mb-2">Molecular Treatment</h3>
               <p className="text-sm text-serwa-secondary/80 leading-relaxed">
                 Deep structural restoration. Rebuilds broken bonds, restores elasticity, corrects internal damage.
                 Strength and resilience with controlled smoothness.
               </p>
             </div>
-            <div className="rounded-xl border border-serwa-accent/10 bg-white/40 p-5">
-              <h3 className="font-serif text-lg font-semibold text-serwa-secondary mb-2">Botox Treatment</h3>
+            <div className="rounded-xl border-2 border-serwa-secondary bg-serwa-secondary/10 p-5 shadow-[0_0_28px_rgba(46,46,74,0.35)] ring-1 ring-serwa-secondary/30">
+              <h3 className="font-serif text-lg font-semibold text-serwa-secondary mb-2">Blowtox Treatment</h3>
               <p className="text-sm text-serwa-secondary/80 leading-relaxed">
                 Surface refinement and internal filling. Reduces porosity, enhances smoothness, eliminates frizz,
                 and brings visible fullness and gloss.
               </p>
             </div>
-            <div className="rounded-xl border border-serwa-accent/10 bg-white/40 p-5">
+            <div className="rounded-xl border-2 border-serwa-gold bg-serwa-gold/20 p-5 shadow-[0_0_28px_rgba(249,220,92,0.45)] ring-1 ring-serwa-gold/50">
               <h3 className="font-serif text-lg font-semibold text-serwa-secondary mb-2">Collagen Therapy</h3>
               <p className="text-sm text-serwa-secondary/80 leading-relaxed">
                 Flexibility and hydration. Restores moisture balance, improves softness and movement, and creates

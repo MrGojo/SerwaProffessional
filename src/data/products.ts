@@ -6,7 +6,7 @@
  * 
  * 1. TREATMENT - reconstruction cream 1000ml
  * 2. MASK - one mask, 2 quantities
- * 3. SERUM - one serum 250ml
+ * 3. SERUM - hair serum 50ml, heat protector 200ml
  * 4. SHAMPOO - 350ml, 1000ml
  * 5. SHOTS - 3 different shots
  * 6. CONDITIONER - 350ml, 1000ml
@@ -65,7 +65,7 @@ export const products: Product[] = [
       'A high-performance reconstructor designed to work in a precise 1:1 ratio with Molecular 360 treatment shots. Rebuilds strength, elasticity, and internal structure without masking damage.',
     category: 'treatment',
     highlights: [
-      'Same base for Molecular, Botox-style, and collagen-style protocols',
+      'Same base for Molecular, Blowtox-style, and collagen-style protocols',
       'Targets cortex-level repair, not just surface slip',
       'Salon-grade control: predictable processing and rinse',
     ],
@@ -109,7 +109,7 @@ export const products: Product[] = [
   },
   {
     id: '3',
-    handle: 'hair-serum-250ml',
+    handle: 'hair-serum-50ml',
     title: 'Hair Serum',
     tagline: 'Weightless finishing shine and thermal discipline.',
     description:
@@ -127,10 +127,35 @@ export const products: Product[] = [
     howToUse:
       'Dispense 1–2 pumps into palms, emulsify, then work through mid-lengths and ends on dry or damp hair before heat styling. Layer lightly; build only where needed.',
     variants: [
-      { id: 'v3', title: '250ml', price: '0', available: true, option: '250ml' },
+      { id: 'v3', title: '50ml', price: '0', available: true, option: '50ml' },
     ],
     images: ['/placeholder-product.svg'],
     featured: true,
+  },
+  {
+    id: '11',
+    handle: 'heat-protector-200ml',
+    title: 'Heat Protector',
+    tagline: 'Thermal shield for styling without compromise.',
+    description:
+      'A professional heat protector that guards hair against blow-drying and hot tools while keeping movement, shine, and Molecular 360 results intact.',
+    category: 'serum',
+    highlights: [
+      'Protects against heat damage during styling',
+      'Lightweight finish — no heavy coating',
+      'Ideal before blow-dry, iron, or curling',
+    ],
+    story:
+      'Heat is part of every professional finish. This protector creates a barrier that helps hair withstand styling temperatures without sacrificing the softness and repair achieved in the salon.',
+    ingredients:
+      'Heat-active polymers and conditioning agents designed for professional use. Lightweight enough for daily styling routines.',
+    howToUse:
+      'Spray or apply evenly through damp or dry hair before heat styling. Focus on mid-lengths and ends. Style as usual.',
+    variants: [
+      { id: 'v11', title: '200ml', price: '0', available: true, option: '200ml' },
+    ],
+    images: ['/placeholder-product.svg'],
+    featured: false,
   },
   {
     id: '4',
@@ -207,10 +232,10 @@ export const products: Product[] = [
   {
     id: '7',
     handle: 'shot-2',
-    title: 'Botox-Style Treatment Shot',
+    title: 'Blowtox-Style Treatment Shot',
     tagline: 'Shot B — fill, softness & “glass” body.',
     description:
-      'Ampoule calibrated for a Botox-style outcome when mixed with Reconstruction Cream: plumped softness, reduced porosity feel, and high-gloss slip.',
+      'Ampoule calibrated for a Blowtox-style outcome when mixed with Reconstruction Cream: plumped softness, reduced porosity feel, and high-gloss slip.',
     category: 'shots',
     highlights: [
       'Pairs 1:1 with the same cream base as other shots',
@@ -218,7 +243,7 @@ export const products: Product[] = [
       'Popular after blonding or double-process colour',
     ],
     story:
-      'Clients asking for “hair Botox” want fill without frizz. This shot biases the matrix toward cushioned body and reflective shine while staying inside one Molecular 360 narrative.',
+      'Clients asking for Blowtox-style results want fill without frizz. This shot biases the matrix toward cushioned body and reflective shine while staying inside one Molecular 360 narrative.',
     ingredients:
       'Fill-focused conditioning actives and film formers at professional concentration. Use only in approved cream mixtures.',
     howToUse:
