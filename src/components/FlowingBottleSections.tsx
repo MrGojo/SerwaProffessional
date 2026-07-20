@@ -185,6 +185,8 @@ const FlowingBottleSections = forwardRef<HTMLDivElement, FlowingBottleSectionsPr
                     src={SHAMPOO_BOTTLE_IMG}
                     alt="SERWA Shampoo"
                     className="max-h-full w-auto object-contain drop-shadow-lg"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = '/placeholder-product.svg'
                     }}
@@ -211,6 +213,8 @@ const FlowingBottleSections = forwardRef<HTMLDivElement, FlowingBottleSectionsPr
                       src={product.images[0] || '/placeholder-product.svg'}
                       alt={product.title}
                       className="max-h-full w-auto object-contain"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="p-6 text-center">

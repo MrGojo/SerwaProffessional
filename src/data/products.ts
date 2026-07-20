@@ -78,7 +78,7 @@ export const products: Product[] = [
     variants: [
       { id: 'v1', title: '1000ml', price: '0', compareAtPrice: undefined, available: true, option: '1000ml' },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/reconstruction-cream.png'],
     featured: true,
   },
   {
@@ -104,7 +104,7 @@ export const products: Product[] = [
       { id: 'v2a', title: 'Size 1', price: '0', available: true, option: '250ml' },
       { id: 'v2b', title: 'Size 2', price: '0', available: true, option: '500ml' },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/hair-mask.png'],
     featured: true,
   },
   {
@@ -129,7 +129,7 @@ export const products: Product[] = [
     variants: [
       { id: 'v3', title: '50ml', price: '0', available: true, option: '50ml' },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/hair-serum.png'],
     featured: true,
   },
   {
@@ -154,7 +154,7 @@ export const products: Product[] = [
     variants: [
       { id: 'v11', title: '200ml', price: '0', available: true, option: '200ml' },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/heat-protector.png'],
     featured: false,
   },
   {
@@ -179,7 +179,7 @@ export const products: Product[] = [
     variants: [
       { id: 'v4', title: '350ml', price: '0', available: true, option: '350ml' },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/shampoo-350ml.png'],
   },
   {
     id: '5',
@@ -203,7 +203,7 @@ export const products: Product[] = [
     variants: [
       { id: 'v5', title: '1000ml', price: '0', available: true, option: '1000ml' },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/shampoo-1000ml.png'],
   },
   {
     id: '6',
@@ -227,7 +227,7 @@ export const products: Product[] = [
     variants: [
       { id: 'v6', title: 'Default', price: '0', available: true },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/shot-molecular.jpg'],
   },
   {
     id: '7',
@@ -251,7 +251,7 @@ export const products: Product[] = [
     variants: [
       { id: 'v7', title: 'Default', price: '0', available: true },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/shot-blowtox.jpg'],
   },
   {
     id: '8',
@@ -275,7 +275,7 @@ export const products: Product[] = [
     variants: [
       { id: 'v8', title: 'Default', price: '0', available: true },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/shot-collagen.jpg'],
   },
   {
     id: '9',
@@ -299,7 +299,7 @@ export const products: Product[] = [
     variants: [
       { id: 'v9', title: '350ml', price: '0', available: true, option: '350ml' },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/conditioner-350ml.png'],
   },
   {
     id: '10',
@@ -323,7 +323,7 @@ export const products: Product[] = [
     variants: [
       { id: 'v10', title: '1000ml', price: '0', available: true, option: '1000ml' },
     ],
-    images: ['/placeholder-product.svg'],
+    images: ['/images/products/conditioner-1000ml.png'],
   },
 ]
 

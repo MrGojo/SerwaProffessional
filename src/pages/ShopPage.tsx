@@ -13,6 +13,7 @@ import { useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { products, categoryLabels, type ProductCategory } from '../data/products'
 import ProductCard from '../components/ProductCard'
+import TextureAccents from '../components/TextureAccents'
 
 type SortOption = 'featured' | 'az' | 'za' | 'price-low' | 'price-high'
 
@@ -64,7 +65,9 @@ export default function ShopPage() {
   ]
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 overflow-hidden">
+      <TextureAccents corners={['bottom-right']} />
+      <div className="relative z-10">
       {/* ========== Collection Header - Original & Mineral style ========== */}
       <motion.header
         initial={{ opacity: 0, y: 20 }}
@@ -147,6 +150,7 @@ export default function ShopPage() {
             </p>
           )}
         </div>
+      </div>
       </div>
     </div>
   )

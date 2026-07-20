@@ -119,7 +119,7 @@ export default function ProductPage() {
                       }`}
                       aria-label={`View image ${i + 1}`}
                     >
-                      <img src={src} alt="" className="w-full h-full object-cover" />
+                      <img src={src} alt="" className="w-full h-full object-contain" loading="lazy" decoding="async" />
                     </button>
                   ))}
                 </div>
@@ -127,7 +127,7 @@ export default function ProductPage() {
               <div
                 className={`relative flex-1 order-1 sm:order-2 rounded-2xl overflow-hidden bg-gradient-to-b from-serwa-primary to-serwa-accent/5 border border-serwa-accent/10 shadow-[0_24px_48px_-12px_rgba(46,46,74,0.12)] aspect-square sm:aspect-[4/5] max-h-[min(85vh,560px)] mx-auto w-full max-w-lg lg:max-w-none`}
               >
-                <img src={mainImage} alt={product.title} className="w-full h-full object-contain p-6 md:p-10" />
+                <img src={mainImage} alt={product.title} className="w-full h-full object-contain p-6 md:p-10 rounded-2xl" decoding="async" />
               </div>
             </div>
 

@@ -44,11 +44,13 @@ export default function ProductCard({ product, variant, index = 0, layout = 'gri
   const cardContent = (
     <>
       {/* Image container with hover effect */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-serwa-primary rounded-lg mb-4 group">
+      <div className="relative aspect-[3/4] overflow-hidden bg-serwa-primary rounded-lg mb-4 group p-2">
         <img
           src={image}
           alt={product.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
         />
         {/* Quick add overlay - shown on hover for grid layout */}
         {layout === 'grid' && !hasMultipleVariants && (

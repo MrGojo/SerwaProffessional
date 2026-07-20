@@ -6,7 +6,6 @@
 
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import petaCertifiedIcon from '../../images/peta certified.png'
 
 type AdvantageIconType =
   | 'customizing'
@@ -17,6 +16,7 @@ type AdvantageIconType =
   | 'inventory'
   | 'sulphate'
   | 'paraben'
+  | 'glutenFree'
   | 'peta'
 
 type ProfessionalAdvantage = {
@@ -85,8 +85,26 @@ function AdvantageIcon({ type }: { type: AdvantageIconType }) {
           <path d="M5 19 19 5" />
         </svg>
       )}
+      {type === 'glutenFree' && (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 text-serwa-secondary" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M12 3v18" />
+          <path d="M8 7c1.2 1.5 2.4 2 4 2s2.8-.5 4-2" />
+          <path d="M7 10c1.4 1.8 2.8 2.6 5 2.6s3.6-.8 5-2.6" />
+          <path d="M6.5 13.5c1.6 2 3.2 2.8 5.5 2.8s3.9-.8 5.5-2.8" />
+          <path d="M5 19 19 5" />
+        </svg>
+      )}
       {type === 'peta' && (
-        <img src={petaCertifiedIcon} alt="PETA certified icon" className="w-full h-full object-cover" />
+        <svg viewBox="0 0 24 24" className="w-6 h-6 text-serwa-secondary" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M7.5 5.5 6 9.5" />
+          <path d="M16.5 5.5 18 9.5" />
+          <ellipse cx="12" cy="14" rx="5" ry="4.5" />
+          <circle cx="10.2" cy="13.2" r="0.6" fill="currentColor" stroke="none" />
+          <circle cx="13.8" cy="13.2" r="0.6" fill="currentColor" stroke="none" />
+          <path d="M10.5 15.8c.8.6 1.7.9 1.5.9s.7-.3 1.5-.9" />
+          <path d="M12 18.2v1.3" />
+          <path d="M9.5 20.5h5" />
+        </svg>
       )}
     </div>
   )
@@ -127,6 +145,11 @@ const professionalAdvantages: ProfessionalAdvantage[] = [
     title: 'No Paraben',
     description: 'Paraben-free formula aligned with clean, professional salon standards.',
     icon: 'paraben',
+  },
+  {
+    title: 'Gluten Free',
+    description: 'Formulated without gluten — suitable for clients seeking gluten-conscious professional care.',
+    icon: 'glutenFree',
   },
   {
     title: 'PETA Certified',
@@ -192,7 +215,7 @@ export default function EducationPage() {
       </section>
 
       {/* Serwa philosophy */}
-      <section className="py-12 md:py-16">
+      <section className="py-12 md:py-16 bg-serwa-primary">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

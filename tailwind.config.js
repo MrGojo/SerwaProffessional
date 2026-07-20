@@ -24,7 +24,8 @@ export default {
       },
       fontFamily: {
         serwa: ['Cormorant Garamond', 'Georgia', 'serif'],
-        serif: ['Cormorant Garamond', 'Georgia', 'serif'], // BIOTOP-inspired elegant typography
+        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+        premium: ['Playfair Display', 'Cormorant Garamond', 'Georgia', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       animation: {

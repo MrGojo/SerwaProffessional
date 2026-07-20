@@ -14,7 +14,7 @@ const blogPosts = [
     title: 'Blog Post Title 1',
     excerpt: 'Content placeholder - add blog post excerpt. Short description of the article.',
     date: '2025-02-01',
-    image: '/placeholder-product.svg',
+    image: '/images/creative/blog-glass-editorial.jpg',
     slug: 'blog-post-1',
   },
   {
@@ -22,7 +22,7 @@ const blogPosts = [
     title: 'Blog Post Title 2',
     excerpt: 'Content placeholder - add blog post excerpt.',
     date: '2025-01-15',
-    image: '/placeholder-product.svg',
+    image: '/images/creative/blog-all-products.jpg',
     slug: 'blog-post-2',
   },
   {
@@ -30,7 +30,7 @@ const blogPosts = [
     title: 'Blog Post Title 3',
     excerpt: 'Content placeholder - add blog post excerpt.',
     date: '2025-01-01',
-    image: '/placeholder-product.svg',
+    image: '/images/creative/blog-products-unboxing.jpg',
     slug: 'blog-post-3',
   },
 ]
@@ -39,7 +39,7 @@ export default function BlogPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-serwa-primary">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -60,7 +60,7 @@ export default function BlogPage() {
       </section>
 
       {/* Blog grid */}
-      <section className="max-w-6xl mx-auto px-4 pb-20">
+      <section className="max-w-6xl mx-auto px-4 pb-20 bg-serwa-primary">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post, i) => (
             <motion.article
@@ -71,11 +71,13 @@ export default function BlogPage() {
               transition={{ delay: i * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="aspect-[16/10] rounded-lg overflow-hidden bg-serwa-accent/10 mb-4">
+              <div className="aspect-[16/10] rounded-lg overflow-hidden bg-serwa-accent/10 mb-4 p-2">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <p className="text-sm text-serwa-secondary/60 mb-2">

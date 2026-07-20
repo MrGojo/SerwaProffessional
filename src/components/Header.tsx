@@ -275,8 +275,14 @@ export default function Header() {
                             </div>
                             </div>
                             {/* Image placeholder - right side, ready for product/hero image */}
-                            <div className="hidden lg:flex flex-shrink-0 w-72 xl:w-80 aspect-[4/5] items-center justify-center rounded-lg bg-serwa-primary/10 border border-serwa-primary/20 overflow-hidden">
-                              <span className="text-serwa-primary/40 text-xs font-medium">Image</span>
+                            <div className="hidden lg:flex flex-shrink-0 w-72 xl:w-80 items-center justify-center rounded-lg bg-serwa-primary/10 border border-serwa-primary/20 overflow-hidden p-2">
+                              <img
+                                src="/images/creative/mega-menu-collagen.jpg"
+                                alt="SERWA Products"
+                                className="w-full h-auto object-contain rounded-lg"
+                                loading="lazy"
+                                decoding="async"
+                              />
                             </div>
                           </div>
                         </div>
